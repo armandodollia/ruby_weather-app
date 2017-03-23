@@ -1,9 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="RUBY_MODULE" version="4">
+  <component name="ModuleRunConfigurationManager">
+    <configuration default="false" name="IRB console: ruby_weather-app" type="IrbRunConfigurationType" factoryName="IRB console" temporary="true">
+      <module name="ruby_weather-app" />
+      <IRB_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <IRB_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <IRB_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <IRB_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <IRB_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <IRB_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$APPLICATION_HOME_DIR$/rb/testing/runner/irb.rb" />
+      <IRB_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="--prompt simple" />
+      <IRB_RUN_CONFIG NAME="IS_RAILS_CONSOLE" VALUE="false" />
+      <method />
+    </configuration>
+  </component>
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$" />
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="rbenv: 2.2.5" jdkType="RUBY_SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" scope="PROVIDED" name="bundler (v1.14.5, ruby-2.0.0-p648) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="activemodel (v4.2.8, rbenv: 2.2.5) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="activerecord (v4.2.8, rbenv: 2.2.5) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="activesupport (v4.2.8, rbenv: 2.2.5) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="addressable (v2.5.0, rbenv: 2.2.5) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="arel (v6.0.4, rbenv: 2.2.5) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="backports (v3.6.8, rbenv: 2.2.5) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bcrypt (v3.1.11, rbenv: 2.2.5) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="builder (v3.2.3, rbenv: 2.2.5) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bundler (v1.14.6, rbenv: 2.2.5) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="capybara (v2.13.0, rbenv: 2.2.5) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="coderay (v1.1.1, rbenv: 2.2.5) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="database_cleaner (v1.5.3, rbenv: 2.2.5) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="diff-lcs (v1.3, rbenv: 2.2.5) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="factory_girl (v4.8.0, rbenv: 2.2.5) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="faker (v1.7.3, rbenv: 2.2.5) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="i18n (v0.8.1, rbenv: 2.2.5) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="method_source (v0.8.2, rbenv: 2.2.5) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="mime-types (v3.1, rbenv: 2.2.5) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="mime-types-data (v3.2016.0521, rbenv: 2.2.5) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="mini_portile2 (v2.1.0, rbenv: 2.2.5) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="minitest (v5.10.1, rbenv: 2.2.5) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.12.1, rbenv: 2.2.5) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.7.1, rbenv: 2.2.5) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="pg (v0.20.0, rbenv: 2.2.5) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="pry (v0.10.4, rbenv: 2.2.5) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="public_suffix (v2.0.5, rbenv: 2.2.5) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rack (v1.5.2, rbenv: 2.2.5) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rack-protection (v1.5.3, rbenv: 2.2.5) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rack-test (v0.6.3, rbenv: 2.2.5) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rake (v12.0.0, rbenv: 2.2.5) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec (v3.5.0, rbenv: 2.2.5) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec-core (v3.5.4, rbenv: 2.2.5) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec-expectations (v3.5.0, rbenv: 2.2.5) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec-mocks (v3.5.0, rbenv: 2.2.5) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec-support (v3.5.0, rbenv: 2.2.5) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="shotgun (v0.9.2, rbenv: 2.2.5) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="shoulda-matchers (v3.1.1, rbenv: 2.2.5) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sinatra (v1.4.8, rbenv: 2.2.5) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sinatra-contrib (v1.4.7, rbenv: 2.2.5) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="slop (v3.6.0, rbenv: 2.2.5) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="thread_safe (v0.3.6, rbenv: 2.2.5) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="tilt (v2.0.7, rbenv: 2.2.5) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="tzinfo (v1.2.2, rbenv: 2.2.5) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="xpath (v2.0.0, rbenv: 2.2.5) [gem]" level="application" />
   </component>
 </module>
