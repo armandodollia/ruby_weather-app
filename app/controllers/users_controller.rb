@@ -1,9 +1,4 @@
-before '/users/new' do
-  authorization_redirect
-end
-
 get '/users/new' do
-  authorization_redirect
   erb :'/users/new'
 end
 
