@@ -1,12 +1,6 @@
 class User < ActiveRecord::Base
-  has_many :potlucks, foreign_key: :host_id
-  has_many :rsvps, foreign_key: :attendee_id
-  has_many :parties, through: :rsvps
-  
   validates :email, presence: true, uniqueness: true
   validates :username, presence: true, uniqueness: true
-  # will nto work with hash because empty string gets hashed
-  validates :password, presence: true
   
   # memoization, left side is returned if true
   #if not true right side is evaluated and set equal to left side
