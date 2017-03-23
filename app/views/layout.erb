@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
+
+  <!-- 
+    normalize.css removes cross-browser differences in defaults, e.g.,
+    differences in how form elements appear between Firefox and IE
+    See: http://necolas.github.com/normalize.css/
+  -->
+  <link rel="stylesheet" href="/css/normalize.css">
+  <!--
+    application.css is where you put your styles
+  -->
+  <link rel="stylesheet" href="/css/application.css">
+
+  <script src="/js/jquery.js"></script>
+  <script src="/js/application.js"></script>
+
+  <title></title>
+</head>
+<body>
+<div class="container">
+  <nav>
+    <div class="nav-wrapper">
+            <a class="left brand-logo"><%= current_user.try(:username) %></a>
+      <ul id="nav-mobile" class="right">
+        <% if logged_in? %>
+            <li class="waves-effect waves-light btn">
+              <form method="post" action="/sessions">
+                <input type="hidden" name="_method" value="delete">
+                <input class="waves-effect waves-light btn" type="submit" value="Logout" class="text_button">
+              </form>
+            </li>
+            <li class="waves-effect waves-light btn"><a href="/users/<%= current_user.id %>/potlucks/new">Host a Potluck</a></li>
+        <% else %>
+            <li class="waves-effect waves-light btn"><a href="/sessions/new">Login </a></li>
+            <li class="waves-effect waves-light btn"><a href="/users/new">Register </a></li>
+        <% end %>
+        <li class="waves-effect waves-light btn"><a href="/">Home</a></li>
+      </ul>
+    </div>
+  </nav>
+  <%= yield %>
+</div>
+</body>
+</html>

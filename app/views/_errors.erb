@@ -1,0 +1,8 @@
+<% if errors %>
+    <div class="error_container">
+      <p><strong>Oops! Something went Wrong</strong></p>
+      <% errors.each do |error| %>
+          <p><%= error %></p>
+      <% end %>
+    </div>
+<% end %>
