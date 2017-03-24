@@ -21,6 +21,7 @@ gem 'pry'
 gem 'bcrypt'
 gem 'httparty'
 gem 'dotenv'
+gem 'geocoder'
 
 group :test do
   gem 'shoulda-matchers'
