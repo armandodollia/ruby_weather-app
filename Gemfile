@@ -19,6 +19,8 @@ gem 'rack', '1.5.2'
 gem 'shotgun'
 gem 'pry'
 gem 'bcrypt'
+gem 'httparty'
+gem 'dotenv'
 
 group :test do
   gem 'shoulda-matchers'
