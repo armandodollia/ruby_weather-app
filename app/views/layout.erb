@@ -27,23 +27,7 @@
 <body>
 <div class="container">
   <nav>
-    <div class="nav-wrapper">
-      <a class="left brand-logo"><%= current_user.try(:username) %></a>
-      <ul id="nav-mobile" class="right">
-        <% if logged_in? %>
-            <li class="waves-effect waves-light btn">
-              <form method="post" action="/sessions">
-                <input type="hidden" name="_method" value="delete">
-                <input class="waves-effect waves-light btn" type="submit" value="Logout" class="text_button">
-              </form>
-            </li>
-        <% else %>
-            <li class="waves-effect waves-light btn"><a href="/sessions/new">Login </a></li>
-            <li class="waves-effect waves-light btn"><a href="/users/new">Register </a></li>
-        <% end %>
-        <li class="waves-effect waves-light btn"><a href="/">Home</a></li>
-      </ul>
-    </div>
+    <a class="center" href="/">Home</a>
   </nav>
   <%= yield %>
 </div>

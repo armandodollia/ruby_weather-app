@@ -1,0 +1,40 @@
+<% if @current_weather %>
+  <div class="row">
+    <div class="col s12 m7">
+      <div class="card #d50000 red accent-4">
+        <div class="card-image">
+          <img src="<%= get_icon_source(@current_weather['weather'][0]['icon']) %>">
+          <span class="card-title black-text"><%= @current_weather['name'] %></span>
+        </div>
+        <div class="card-content">
+          <p>
+            <dl>
+              <dt>Temperature</dt>
+              <dd><%= temperature(@current_weather) %>˚</dd>
+              <dt>Pressure</dt>
+              <dd><%= pressure(@current_weather) %> hPa</dd>
+            </dl>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>
+
+<div>
+  <section>
+    <h1>Type in the city</h1>
+    <form action="/weather/show" method="get">
+      <label for="city_name">City Name</label>
+      <input type="text" name="city_name">
+
+      <input type="radio" id="metric_radio" value="metric" name="unit_type">
+      <label for="metric_radio">Metric</label>
+
+      <input type="radio" id="imperial_radio" value="imperial" name="unit_type" checked>
+      <label for="imperial_radio">Imperial</label>
+      <br>
+      <input type="submit" value="submit">
+    </form>
+  </section>
+</div>
